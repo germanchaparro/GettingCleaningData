@@ -2,9 +2,7 @@
 
 ## How it was done
 
-This file explains all the scripts I used to get to the final tidy dataset.
-
-
+This file explains step by step how was the code done to get to the final tidy dataset.
 
 ### 1. Merges the training and the test sets to create one data set.
 
@@ -63,5 +61,9 @@ meansBySubjectActivity <- lapply(splitBySubjectActivity, function(x) colMeans(x,
 
 
 After that I moved through the list to create the final data frame which contains the mean value of each column grouped by subject and activity. That is the data frame that was saved as the file meansBySubjectActivity.txt
+
+
+## The final data
+The final dataset groups the data by ACTIVITY and SUBJECT calculating the means of all the columns of the merge of training and testing sets. In oder words, each row has the mean values of all the columns group by ACTIVITY and SUBJECT. ACtiVITY and SUBJECT are the first 2 columns of the dataset. The rest of the columns are those that the original data set has.
 
 
