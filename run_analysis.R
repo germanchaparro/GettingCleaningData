@@ -47,7 +47,7 @@ y_train <- read.table( file = "./UCI HAR Dataset/train/y_train.txt",
 X_test <- read.table( file = "./UCI HAR Dataset/test/X_test.txt", 
                       header = FALSE, dec = ".", sep = "" )
 
-# reading y_test.txt (using fread for performance reasons)
+# reading y_test.txt
 y_test <- read.table( file = "./UCI HAR Dataset/test/y_test.txt",
                       header = FALSE, dec = ".", sep = "" )
 
